@@ -1,0 +1,24 @@
+drop database if exists  pointgame24;
+create database pointgame24;
+use pointgame24;
+create table user(
+	username varchar(20) primary key,  # 用户名
+	password varchar(20),     # 密码
+	solvenumber int(10),  # 做题总数量
+	score int(10),     # 总分数
+	correct int(3) # 正确率
+);
+create table record(
+	id varchar(64) primary key, # uuid
+	username varchar(20),  # 用户名
+	problem varchar(20), # 问题
+	answer varchar(20),# 用户答案
+	usetime int(5), # 使用时间
+	result int(2),  # 结果  0 错  1 对
+	timestamp varchar(20) # 时间戳
+);
+insert into user(username,password,solvenumber,score,correct) values
+('zhangsan','123456',100,89,89),
+('lisi','123456',98,76,77);
+
+

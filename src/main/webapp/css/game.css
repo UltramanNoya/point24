@@ -1,0 +1,263 @@
+@charset "utf-8";
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(200deg,#5ee7df,#b490ca);
+    position: relative;
+}
+.card{
+    width:200px;
+    height:280px;
+    background-color:rgba(255,255,255,.5);
+    border-radius: 8px;
+    line-height:280px;
+    text-align:center;
+    position: absolute;
+    top: 80px;
+    transition: transform .1s linear;
+    user-select:none;
+    box-shadow:0 0 1px 1px #9fb1c5;
+}
+
+.card span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:100px;
+    color:rgb(194, 99, 249);
+    font-weight: 100;
+}
+
+.card:hover,.btn-operator:hover,.btn-tool:hover{
+    background-color:rgba(255,255,255,.6);
+    transform: scale(1.05);
+}
+
+.card:active,.btn-operator:active,.btn-tool:active{
+    background-color:rgba(255, 255, 255, 0.5);
+
+}
+
+.num1{
+    left:200px;
+}
+.num2{
+    left:505px;
+}
+
+.num3{
+    left: 810px;
+}
+
+.num4{
+    left:1115px;
+}
+
+.input-result{
+    outline: none;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(240, 248, 255, 0.537);
+    border: none;
+    display: block;
+    position: absolute;
+    top: 530px;
+    left: 810px;
+    font-size: 50px;
+    box-shadow:0 0 2px 2px #9fb1c5;
+    text-indent:20px;
+    letter-spacing: 5px;
+    transition: transform .1s linear;
+}
+
+.input-result::placeholder{
+    color: rgba(240, 248, 255, 0.895);
+}
+
+.input-result:hover{
+    transform: scale(1.1);
+}
+
+.btn-group{
+    position: absolute;
+    top: 390px;
+    left: 200px;
+}
+
+.btn-operator{
+    width: 100px;
+    height:100px;
+    background-color: rgba(240, 248, 255, 0.537);
+    border-radius: 13px;
+    position: absolute;
+    transition: transform .1s linear;
+}
+.btn-operator span{
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    user-select: none;
+}
+
+.btn-operator.add span{
+    top: -5px;
+    left: 21px;
+}
+
+.btn-operator.minus{
+    left: 140px;
+}
+
+.btn-operator.minus span{
+    top: -5px;
+    left: 30px;
+}
+
+.btn-operator.times{
+    left: 280px;
+}
+
+.btn-operator.times span{
+    top: 14px;
+    left: 31px;
+}
+
+.btn-operator.divide{
+    left: 420px;
+}
+
+.btn-operator.divide span{
+    top: -5px;
+    left: 35px;
+}
+
+.btn-operator.left-bracket{
+    top: 140px;
+}
+
+.btn-operator.left-bracket span{
+    top: -7px;
+    left: 31px;
+}
+
+.btn-operator.right-bracket{
+    top: 140px;
+    left: 140px;
+}
+
+.btn-operator.right-bracket span{
+    top: -7px;
+    left: 38px;
+}
+
+.btn-operator.clear{
+    top: 140px;
+    left: 280px;
+}
+
+.btn-operator.clear span{
+    top: -1px;
+    left: 20px;
+}
+
+.btn-operator.backspace{
+    top: 140px;
+    left: 420px;
+}
+
+.btn-operator.backspace span{
+    top: -1px;
+    left: 26px;
+}
+
+.btn-tool{
+    width: 120px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0.537);
+    border-radius: 13px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+    position: absolute;
+    user-select: none;
+    transition: transform .1s linear;
+    letter-spacing: 2px;
+}
+
+.btn-tool.tips{
+    top: 390px;
+    left: 810px;
+}
+.btn-tool.tips span{
+    position:absolute;
+    top: 3px;
+    left: 30px;
+
+}
+
+.btn-tool.change-game{
+    top: 390px;
+    left: 1000px;
+}
+.btn-tool.change-game span{
+    position:absolute;
+    top: 7px;
+    left: 18px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.btn-tool.home{
+    top: 390px;
+    left: 1000px;
+}
+.btn-tool.home span{
+    position:absolute;
+    top: 7px;
+    left: 22px;
+    font-size: 25px;
+}
+
+.btn-tool.start-game{
+    top: 460px;
+    left: 810px;
+}
+.btn-tool.start-game span{
+    position:absolute;
+    top: 3px;
+    left: 24px;
+}
+
+.btn-tool.submit{
+    top: 460px;
+    left: 1000px;
+}
+
+.btn-tool.submit span{
+    position:absolute;
+    top: 3px;
+    left: 24px;
+}
+
+.score,.time{
+    position: absolute;
+    top: 450px;
+    letter-spacing: 2px;
+    left: 1190px;
+    user-select: none;
+    color: rgba(240, 248, 255, 0.581);
+    font-size: 22px;
+}
+.score span{
+    color: #fb5eb4e4;
+}
+
+.time{
+    top: 385px;
+}
+.time span{
+    color: blueviolet;
+}
